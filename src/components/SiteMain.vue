@@ -6,7 +6,7 @@ export default {
         BannerMain,
         CurrentSeries
     },
-    name: 'SiteMain',        
+    name: 'SiteMain',  
 }
 </script>
 
