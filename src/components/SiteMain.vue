@@ -12,10 +12,12 @@ export default {
 
 <template>
 
-    <CurrentSeries/>
-    <!-- #/SECTION TOP -->
+    <main>
+        <CurrentSeries/>
+        <!-- #/SECTION TOP -->
 
-    <BannerMain/>
-    <!-- #/SECTION BOTTOM -->
+        <BannerMain/>
+        <!-- #/SECTION BOTTOM -->
+    </main>
     
 </template>

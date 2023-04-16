@@ -52,7 +52,7 @@
 
 <template>
    
-        <nav class="navbar navbar-expand-sm navbar-light justify-content-between">
+        <nav class="navbar navbar-expand-sm navbar-light justify-content-between pb-0">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="../assets/img/dc-logo.png" alt="">
@@ -82,6 +82,15 @@ a {
 
     &:hover {
         border-bottom: 3px solid $primary;
+    }
+}
+
+#navbarID {
+    height: 70px;
+    padding-top: 0.8rem;
+
+    .navbar-nav {
+        height: 100%;
     }
 }
 
