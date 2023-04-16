@@ -1,5 +1,9 @@
 <script>
+import SeriesComicbooks from './SeriesComicbooks.vue'
 export default {
+    components: {
+        SeriesComicbooks,
+    },
     name: 'CurrentSeries',
     data() {
         return {
@@ -95,7 +99,13 @@ export default {
         </div>
         </div>
         <div class="container">
+            <div class="row">
 
+                <SeriesComicbooks v-for="comicbook in comicbooks"
+                :thumb="comicbook.thumb"
+                :series="comicbook.series"
+                :type="comicbook.type"/>
+            </div>
         </div>
     </section>
 
