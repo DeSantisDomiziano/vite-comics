@@ -40,10 +40,10 @@
 
 <section>
         <div class="container">
-            <div class="row py-3">
+            <div class="row py-5">
                 <div class="col" v-for="item in banner">
                     <img :src="getImageUrl(item.src)" :alt="item.text">
-                    <p class="text-uppercase d-flex ps-2 align-items-center h-100  m-0">{{ item.text }}</p>
+                    <p class="text-uppercase d-flex ps-2 align-items-center h-100 m-0 fw-semibold">{{ item.text }}</p>
                 </div>
             </div>
         </div>
@@ -53,20 +53,26 @@
 
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
+section {
+    background-color: $banner;
+    color: $light;
+    font-size: 0.8rem;
+
     img {
-        max-height: 50px;
-        float: left;
+    max-height: 50px;
+    float: left;
     }
 
-    p {
-        font-size: 0.8rem;
-    }
     .col:nth-child(5) {
         img {
-            max-width: 70px;
+            max-width: 60px;
             position: relative;
             top: 0.25rem
         }
     }
+}
+
 
 </style>

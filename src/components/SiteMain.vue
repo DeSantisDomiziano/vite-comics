@@ -1,8 +1,10 @@
 <script>
 import BannerMain from './main-components/BannerMain.vue'
+import CurrentSeries from './main-components/CurrentSeries.vue'
 export default {
     components: {
-        BannerMain
+        BannerMain,
+        CurrentSeries
     },
     name: 'SiteMain',        
 }
@@ -10,24 +12,10 @@ export default {
 
 <template>
 
-    <section id="top">
-        <div class="container">
-
-        </div>
-    </section>
+    <CurrentSeries/>
     <!-- #/SECTION TOP -->
 
     <BannerMain/>
     <!-- #/SECTION BOTTOM -->
     
 </template>
-
-
-<style lang="scss" scoped>
-section {
-    background-color: black;
-    color: white;
-}
-
-
-</style>
