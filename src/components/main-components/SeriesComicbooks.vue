@@ -29,8 +29,8 @@
 <style lang="scss" scoped>
 
 .col-2 {
-    color: black;
-    padding: 2.25rem 0.5rem;
+/*     color: black;
+ */    padding: 2.25rem 0.5rem;
 
     .card {
         background: transparent;
@@ -44,7 +44,7 @@
     
     
     img {
-        max-height: 160px;
+        min-height: 260px;
         aspect-ratio: 1;
         object-fit: cover;
     }
